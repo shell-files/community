@@ -1,4 +1,4 @@
-name: "🛡️ Security Issue"
+name: "🛡️ Security Issue(보안이슈)"
 description: "보안 취약점 및 위협 요소를 보고하고 대응합니다."
 labels: ["security", "critical"]
 body:

@@ -1,4 +1,4 @@
-name: "⚡ Performance Issue"
+name: "⚡ Performance Issue(성능 관련 이슈)"
 description: "시스템 성능 저하, 병목 현상, 응답 지연 문제를 보고합니다."
 labels: ["performance"]
 body:

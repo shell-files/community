@@ -1,4 +1,4 @@
-name: "♻️ Update & Refactor"
+name: "♻️ Update & Refactor(수정 내용)"
 description: "기존 기능을 수정하거나 코드 로직을 업데이트합니다."
 labels: ["update"]
 body:
