@@ -1,0 +1,30 @@
+name: Windows PC Job
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: .
+
+      - name: Build Frontend
+        working-directory: ./frontend
+        run: |
+          npm install
+          npm run build
+      
+      - name: Docker Down
+        working-directory: .
+        run: docker compose down
+        continue-on-error: true
+
+      - name: Docker Up
+        working-directory: .
+        run: docker compose up -d
